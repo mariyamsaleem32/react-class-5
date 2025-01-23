@@ -1,14 +1,14 @@
-import React, { createContext, useReducer } from 'react'
+import React, { createContext, useReducer } from 'react';
 import { reducer } from './reducer';
-export const GlobalContext = createContext("Initial Value");
+export const GlobalContext = createContext('Initial Value');
 
 let data = {
   user: {},
   darkTheme: true
 }
 
-export function ContextProvider ({ children })  {
-const [state, dispatch] = useReducer(reducer, data)
+export default function ContextProvider({ children }) {
+  const [state, dispatch] = useReducer(reducer, data)
   return (
     <GlobalContext.Provider value={{ state, dispatch }}>
       {children}
