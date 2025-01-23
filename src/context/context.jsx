@@ -7,7 +7,7 @@ let data = {
   darkTheme: true
 }
 
-export const ContextProvider = ({ children }) => {
+export function ContextProvider ({ children })  {
 const [state, dispatch] = useReducer(reducer, data)
   return (
     <GlobalContext.Provider value={{ state, dispatch }}>
