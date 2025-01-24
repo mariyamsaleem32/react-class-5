@@ -4,11 +4,11 @@ export const reducer = (state, action) => {
     case "ADD": {
       return {...state, myNum : state.myNum+1}
     }
-    case "USER_LOGIN": {
-      return { ...state, user: action.payload }
+    case "SUB": {
+      return {...state, myNum : state.myNum-1}
     }
-    case "USER_LOGOUT": {
-      return { ...state, user: null } 
+    case "CLEAR": {
+      return {...state, myNum : state.myNum=0}
     }
     case "CHANGE_THEME": {
       return { ...state, darkTheme: !state.darkTheme }

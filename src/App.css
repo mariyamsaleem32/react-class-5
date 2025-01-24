@@ -1,14 +1,23 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: pink;
+  }
+
 .main{
-  font-size: 38px;
-  text-align: center;
+font-size: 38px;
+text-align: center;
+color: rgb(70, 67, 67);
 }
 
 button{
-  width: 85px;
-  height: 65px;
+  width: 200px;
+  height: 85px;
+  font-size: 30px;
+  font-weight:400;
   text-align: center;
   background-color: black;
   color: rgb(255, 255, 255);
-  border-radius: 35%;
+  border-radius: 20px;
   cursor: pointer;
 }

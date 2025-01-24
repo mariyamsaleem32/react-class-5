@@ -18,18 +18,19 @@ const Layout = () => {
           fontSize: '30px',
           fontStyle: 'italic',
           cursor: 'pointer',
+          background : 'black',
+          padding: '10px'
         }}>
-        <Link to={'/'} style={{ textDecoration: 'none' }}>
+        <Link to={'/'} style={{ color: 'white',textDecoration: 'none' }}>
           <div>Home</div>
         </Link>
-        <Link to={'/about'} style={{ textDecoration: 'none' }}>
+        <Link to={'/about'} style={{color: 'white', textDecoration: 'none' }}>
           <div>About</div>
         </Link>
-        <Link to={'/contact'} style={{ textDecoration: 'none' }}>
+        <Link to={'/contact'} style={{color: 'white', textDecoration: 'none' }}>
           <div>Contact</div>
         </Link>
         </div>
-        
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

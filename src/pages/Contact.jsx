@@ -8,7 +8,7 @@ const Contact = () => {
           <div>
               <h1>I am Contact page</h1>
               <h1>{state.myNum}</h1>
-              <button onClick={()=>{dispatch({type:"ADD"})}}>increament</button>
+              <button onClick={()=>{dispatch({type:"CLEAR"})}}>Clear</button>
           </div>
       );
 }
