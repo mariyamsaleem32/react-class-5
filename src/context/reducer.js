@@ -1,6 +1,9 @@
 export const reducer = (state, action) => {
   
   switch (action.type) {
+    case "ADD": {
+      return {...state, myNum : state.myNum+1}
+    }
     case "USER_LOGIN": {
       return { ...state, user: action.payload }
     }
@@ -14,4 +17,5 @@ export const reducer = (state, action) => {
      return state
     }
   }
+  
 }

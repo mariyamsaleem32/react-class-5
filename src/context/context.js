@@ -4,7 +4,8 @@ export const GlobalContext = createContext('Initial Value');
 
 let data = {
   user: {},
-  darkTheme: true
+  darkTheme: true,
+  myNum : 0
 }
 
 export default function ContextProvider({ children }) {

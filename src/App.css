@@ -1,6 +1,14 @@
 .main{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 32px;
+  font-size: 38px;
+  text-align: center;
+}
+
+button{
+  width: 85px;
+  height: 65px;
+  text-align: center;
+  background-color: black;
+  color: rgb(255, 255, 255);
+  border-radius: 35%;
+  cursor: pointer;
 }
